@@ -1,0 +1,60 @@
+
+<!--  
+
+    ESTE HTML DEBE SER PUESTO EN "C:\xampp\htdocs\php" al igual que todos los php
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+    <link rel = "icon" href="favicon.png" type = "image/png">
+</head>
+<body>
+    <h1 align = "center">Buscador de palabras</h1>
+    <h3 align = "center">por textos escritos por monos explotados sin paga</h3>
+    <br><hr><br>
+    <form action = "./Escritos_Monos.php" target = "_self" method="post" >
+
+        <fieldset>
+            
+            <legend><i><h4>Buscador</h4></i></legend>
+            
+            <label><strong>Selecciona las palabras que quiere buscar: <input type = "text" maxlength="200" minlength = "1" size = "25" name = "palabras" required></strong></label>
+            <br><br>
+            <label><strong>Modo: <select name = "modo" required>
+                <option value = "Normal">Normal</option>
+                <option value = "Palabras">Palabras</option>
+                <option value = "Orden">Orden</option>
+                </select>
+            </strong></label>
+
+            <br><br>
+            <label><strong>Zona Horaria: <select name = "zona_horaria" required>
+                <option value = "newYork">New York</option>
+                <option value = "mexico">México</option>
+                <option value = "berlin">Berlin</option>
+                </select>
+            </strong></label>
+            <br><br>
+            <input type = "submit">
+            <input type = "reset">
+            </fieldset>
+
+
+       
+        </form>
+
+        <br>
+        <br>
+        <div align = "center">
+        <img src = "mono_trabajando.jpg" height= "500">
+        </div>
+
+</body>
+</html>
